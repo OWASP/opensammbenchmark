@@ -1,0 +1,52 @@
+SAMM Model Table Description
+
+Team Public
+If a team was assessed the metadata about the team is stored here.
+
+Organization Public
+The metadata about an organization goes here.
+
+Sector
+The general industry of the assessed organization.
+
+Region
+A large geographic area that the organization primarily operates in.
+
+Method
+Type of assessment (e.g. third party or self).
+
+Granularity
+Indicates scale of assessment (e.g. single team to organization).
+
+AssessmentPublic
+Contains the metadata about the assessment conducted.
+
+SAMMQuestionnaire
+Contains the metadata about each version of the SAMM questionnaire.
+
+AssessmentQuestion
+Questions from each SAMM questionnaire with text, order, etc.
+
+Level
+Maturity level within SAMM, v1.0 has 4 maturity levels (0-3).
+
+SecurityPractice
+Sub-Category under Business Function, in SAMM v1.0 there are 4 practices for each Business Function.
+
+BusinessFunction
+Primary Category in SAMM, v1.0 has four Business Functions (Governance, Construction, etc).
+
+Questionnaire_Question
+X-Ref table to map which questions are part of which version of the SAMM questionnaire.
+
+Responses
+Possible responses to questions in the questionnaire, v1.0 is Y/N. This table provides support for expanding possible answers in future versions.
+
+QuestionResponse
+X-Ref table to map which responses are valid for which questions.
+
+AssessPractice
+Contains the summarized score for each of the security practices for the questionnaire used. More coarse grained assessment score and is considered the minimum needed to submit an assessment.
+
+AssessQuestion
+Contains the detailed answer for each question within the questionnaire used. Fine grained detail from an assessment, may optionally be provided by the submitting party. Much more useful in future analysis.
